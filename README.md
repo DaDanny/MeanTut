@@ -1,7 +1,7 @@
 # For Me:
-http://mean-tutorial-11863.onmodulus.net/
-https://modulus.io/project/11863
-http://scotch.io/tutorials/javascript/creating-a-single-page-todo-app-with-node-and-angular
+* http://mean-tutorial-11863.onmodulus.net/
+* https://modulus.io/project/11863
+* http://scotch.io/tutorials/javascript/creating-a-single-page-todo-app-with-node-and-angular
 
 # MEAN Stack
 
