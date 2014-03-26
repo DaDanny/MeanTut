@@ -1,3 +1,8 @@
+# For Me:
+http://mean-tutorial-11863.onmodulus.net/
+https://modulus.io/project/11863
+http://scotch.io/tutorials/javascript/creating-a-single-page-todo-app-with-node-and-angular
+
 # MEAN Stack
 
 MEAN is a boilerplate that provides a nice starting point for [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you quick and organized way to start developing of MEAN based web apps with useful modules like mongoose and passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.  

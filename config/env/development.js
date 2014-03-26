@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    db: 'mongodb://localhost/mean-dev',
+    db: 'mongodb://root:root@novus.modulusmongo.net:27017/uvin5ydO',
     app: {
         name: 'MEAN - A Modern Stack - Development'
     },
