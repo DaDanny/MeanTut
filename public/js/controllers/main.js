@@ -1,7 +1,7 @@
 angular.module('todoController', [])
 	.controller('mainController', function($scope, $http, Todos){
 		$scope.formData = {};
-
+		//$scope.todo = Todo;
 		Todos.get()
 			.success(function(data){
 				$scope.todos = data;
@@ -18,9 +18,10 @@ angular.module('todoController', [])
 		};
 
 		$scope.deleteTodo = function(id){
-			todos.delete(id)
+			Todos.delete(id)
 				.success(function(data){
 					$scope.todos= data;
 				});
 		};
+		console.log(myService);
 	});

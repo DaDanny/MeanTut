@@ -1,9 +1,9 @@
 'use strict';
 var mongoose = require('mongoose'),
-	todo = require('./models/todo')
+	Todo = mongoose.model('Todo');
 
 exports.find = function(req, res){
-	todo.find(function(err,todos){
+	Todo.find(function(err,todos){
 		if(err){
 			res.send(err);
 		}
@@ -14,7 +14,7 @@ exports.find = function(req, res){
 
 exports.create= function(req,res){
 
-	todo.create({
+	Todo.create({
 		text: req.body.text,
 		done: false
 	}, function(err, todo){
@@ -22,7 +22,7 @@ exports.create= function(req,res){
 			res.send(err);
 		}
 
-		todo.find(function(err, todos){
+		Todo.find(function(err, todos){
 			if(err){
 				res.send(err);
 			}
@@ -32,14 +32,14 @@ exports.create= function(req,res){
 };
 
 exports.remove = function(req, res){
-	todo.remove({
+	Todo.remove({
 		_id : req.params.todo_id
 	}, function(err, todo){
 		if(err){
 			res.send(err);
 		}
 
-		todo.find(function(err, todos){
+		Todo.find(function(err, todos){
 			if(err){
 				res.send(err);
 			}
@@ -49,5 +49,5 @@ exports.remove = function(req, res){
 };
 
 exports.render = function(req, res) {
-    res.sendfile('./app/views/vote.html');
+    res.sendfile('./public/vote.html');
 };
