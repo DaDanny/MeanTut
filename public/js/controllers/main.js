@@ -23,5 +23,5 @@ angular.module('todoController', [])
 					$scope.todos= data;
 				});
 		};
-		console.log(myService);
+		//console.log(myService);
 	});

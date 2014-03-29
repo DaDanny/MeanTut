@@ -27,7 +27,11 @@ angular.module('mean').config(['$stateProvider', '$urlRouterProvider',
       .state('home', {
         url: '/',
         templateUrl: 'views/index.html'
-    });
+    })
+      .state('vote',{
+        url:'/vote',
+        templateUrl: 'vote.html'
+      });
 }
 ]);
 
@@ -37,3 +41,5 @@ angular.module('mean').config(['$locationProvider',
     $locationProvider.hashPrefix('!');
 }
 ]);
+
+angular.module('scotchTodo', ['todoController', 'todoService']);
